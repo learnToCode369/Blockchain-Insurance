@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Blockchain Insurance</title>
+        <!-- BOOTSTRAP CORE STYLE CSS -->
+        <link href="../App_Themes/Theme1/assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- FONT AWESOME CSS -->
+        <link href="../App_Themes/Theme1/assets/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- FLEXSLIDER CSS -->
+        <link href="../App_Themes/Theme1/assets/css/flexslider.css" rel="stylesheet" />
+        <!-- CUSTOM STYLE CSS -->
+        <link href="../App_Themes/Theme1/assets/css/style.css" rel="stylesheet" />
+        <!-- Google	Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet'
+            type='text/css' />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                    </span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="logo-custom" src="../App_Themes/Theme1/assets/img/logo180-50.png" alt="" /></a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.aspx">HOME</a></li>
+                    <li><a href="customer.aspx">MANAGE USERS</a></li>
+                    <li><a href="managepolicy.aspx">MANAGE POLICY</a></li>
+                    <li><a href="view_claim.aspx">VIEW CLAIM</a></li>
+                   <%--<li><a href="notice.aspx">NOTICE</a></li> --%>
+                    <li><a href="../startpage.aspx">LOGOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--NAVBAR SECTION END-->
+    <div class="home-sec" id="home">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center ">
+                    <div class="col-lg-12  col-md-12 col-sm-12">
+                        <div class="flexslider set-flexi" id="main-section">
+                            <ul class="slides move-me">
+                                <!-- Slider 01 -->
+                                <li>
+                                    <h3>
+                                        Blockchain Insurance</h3>
+                                    <h1>
+                                        THE UNIQUE APPROCH</h1>
+                                 <%--   <a href="#features-sec" class="btn btn-info btn-lg">GET AWESOME </a><a href="#features-sec"
+                                        class="btn btn-success btn-lg">FEATURE LIST </a></li>--%>
+                                <!-- End Slider 01 -->
+                                <!-- Slider 02 -->
+                                <li>
+                                    <h3>
+                                        Blockchain Insurance</h3>
+                                    <h1>
+                                        UNMATCHED SOLUTION</h1>
+                                  <%--  <a href="#features-sec" class="btn btn-primary btn-lg">GET AWESOME </a><a href="#features-sec"
+                                        class="btn btn-danger btn-lg">FEATURE LIST </a></li>--%>
+                                <!-- End Slider 02 -->
+                                <!-- Slider 03 -->
+                                <li>
+                                    <h3>
+                                        Blockchain Insurance</h3>
+                                    <h1>
+                                        PROVIDE HIGH SECURITY</h1>
+                                   <%-- <a href="#features-sec" class="btn btn-default btn-lg">GET AWESOME </a><a href="#features-sec"
+                                        class="btn btn-info btn-lg">FEATURE LIST </a></li>--%>
+                                <!-- End Slider 03 -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HOME SECTION END-->
+    <div class="tag-line">
+        <div class="container">
+            <div class="row  text-center">
+                <div class="col-lg-12  col-md-12 col-sm-12">
+                    <h2 data-scroll-reveal="enter from the bottom after 0.1s">
+                        <i class="fa fa-circle-o-notch"></i>WELCOME TO INSURANCE COMPANY <i class="fa fa-circle-o-notch">
+                        </i>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HOME SECTION TAG LINE END-->
+    <br />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div style="margin-bottom: 60%"></div>
+    </asp:ContentPlaceHolder>
+    <!-- FEATURES SECTION END-->
+    <!-- CONTACT SECTION END-->
+   <%-- <div id="footer">
+        &copy 2019 yourdomain.com | All Rights Reserved | <a href="#"
+            style="color: #fff" target="_blank">Design by : binarytheme.com</a>
+    </div>--%>
+    <!-- FOOTER SECTION END-->
+    <!--  Jquery Core Script -->
+    <script src="../App_Themes/Theme1/assets/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="../App_Themes/Theme1/assets/js/bootstrap.js"></script>
+    <!--  Flexslider Scripts -->
+    <script src="../App_Themes/Theme1/assets/js/jquery.flexslider.js"></script>
+    <!--  Scrolling Reveal Script -->
+    <script src="../App_Themes/Theme1/assets/js/scrollReveal.js"></script>
+    <!--  Scroll Scripts -->
+    <script src="../App_Themes/Theme1/assets/js/jquery.easing.min.js"></script>
+    <!--  Custom Scripts -->
+    <script src="../App_Themes/Theme1/assets/js/custom.js"></script>
+    <div>
+    </div>
+    </form>
+</body>
+</html>
